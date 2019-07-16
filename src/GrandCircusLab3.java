@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class GrandCircusLab3 {
 	public static void main(String[] args) {
 		
+		System.out.println("Welcome! What is your name?");
 		var s = new Scanner(System.in);
+		var name = s.nextLine();
 		
 		long number = -1; // makes it harder for the user to unintentionally overflow the program
 		for (;;) {
@@ -17,7 +19,7 @@ public class GrandCircusLab3 {
 				break;
 			} catch (NumberFormatException e) {
 				if (tmp.equals("quit")) {
-					System.out.println("Goodbye.");
+					System.out.printf("Goodbye, %s.", name);
 					break;
 				} else {
 					System.out.println("Not an integer or too large to parse. Enter \"quit\" to quit.");
