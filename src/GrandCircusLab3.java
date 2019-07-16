@@ -16,8 +16,12 @@ public class GrandCircusLab3 {
 			}
 			try {
 				number = Long.parseLong(tmp);
-				s.close();
-				break;
+				if (number > 0 && number <= 100) {
+					s.close();
+					break;
+				} else {
+					System.out.println("Please enter a number between 1 and 100.");
+				}
 			} catch (NumberFormatException e) {
 				if (tmp.equals("quit")) {
 					System.out.printf("Goodbye, %s.", name);
