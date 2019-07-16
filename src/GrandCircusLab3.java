@@ -4,9 +4,13 @@ public class GrandCircusLab3 {
 	public static void main(String[] args) {
 		
 		var s = new Scanner(System.in);
+		
 		long number = -1; // makes it harder for the user to unintentionally overflow the program
 		for (;;) {
 			var tmp = s.nextLine();
+			if (tmp.replace(" ", "").equals("")) {
+				tmp = "0";
+			}
 			try {
 				number = Long.parseLong(tmp);
 				s.close();
