@@ -25,6 +25,7 @@ public class GrandCircusLab3 {
 			} catch (NumberFormatException e) {
 				if (tmp.equals("quit")) {
 					System.out.printf("Goodbye, %s.", name);
+					s.close();
 					break;
 				} else {
 					System.out.println("Not an integer or too large to parse. Enter \"quit\" to quit.");
