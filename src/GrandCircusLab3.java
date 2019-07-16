@@ -4,13 +4,13 @@ public class GrandCircusLab3 {
 	public static void main(String[] args) {
 		
 		System.out.println("Welcome! What is your name?");
-		var s = new Scanner(System.in);
-		var name = s.nextLine();
+		Scanner s = new Scanner(System.in);
+		String name = s.nextLine();
 		
 		System.out.printf("Input your number and I will tell you more about it, %s. Type \"quit\" to quit.\n", name);
 		long number = -1; // makes it harder for the user to unintentionally overflow the program
 		for (;;) {
-			var tmp = s.nextLine();
+			String tmp = s.nextLine();
 			if (tmp.replace(" ", "").equals("")) {
 				tmp = "0";
 			}
