@@ -7,6 +7,7 @@ public class GrandCircusLab3 {
 		var s = new Scanner(System.in);
 		var name = s.nextLine();
 		
+		System.out.printf("Input your number and I will tell you more about it, %s.\n", name);
 		long number = -1; // makes it harder for the user to unintentionally overflow the program
 		for (;;) {
 			var tmp = s.nextLine();
