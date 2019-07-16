@@ -9,7 +9,7 @@ public class GrandCircusLab3 {
 		
 		System.out.printf("Input your number and I will tell you more about it, %s. Type \"quit\" to quit.\n", name);
 		long number = -1; // makes it harder for the user to unintentionally overflow the program
-		for (;;) {
+		while (true) {
 			String tmp = s.nextLine();
 			if (tmp.replace(" ", "").equals("")) {
 				tmp = "0";
