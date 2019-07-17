@@ -7,7 +7,7 @@ public class GrandCircusLab3 {
 		Scanner s = new Scanner(System.in);
 		String name = s.nextLine();
 		
-		System.out.printf("Input your number and I will tell you more about it, %s. Type \"quit\" to quit.\n", name);
+		System.out.printf("Input your number and I will tell you more about it, %s. Type \"quit\" to quit.%n", name);
 		while (true) {
 			long number = -1; // makes it harder for the user to unintentionally overflow the program
 			while (true) {
@@ -36,7 +36,7 @@ public class GrandCircusLab3 {
 			if ((number % 2) > 0) {
 				System.out.printf("%d: Odd.", number);
 				if (number > 60) {
-					System.out.printf("\n%d: Odd and > 60.", number);
+					System.out.printf("%n%d: Odd and > 60.", number);
 				}
 			} else {
 				if (number >= 2 && number < 25) {
@@ -45,7 +45,7 @@ public class GrandCircusLab3 {
 					System.out.println("Even.");
 				}
 			}
-			System.out.println("\nPlease enter a number between 1 and 100. Enter \"quit\" to quit.");
+			System.out.println("%nPlease enter a number between 1 and 100. Enter \"quit\" to quit.");
 		}
 	}
 }
