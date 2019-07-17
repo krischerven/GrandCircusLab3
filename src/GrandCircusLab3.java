@@ -24,7 +24,7 @@ public class GrandCircusLab3 {
 					}
 				} catch (NumberFormatException e) {
 					if (tmp.equals("quit")) {
-						System.out.printf("Goodbye, %s.", name);
+						System.out.printf("Goodbye, %s.\n", name);
 						s.close();
 						return;
 					} else {
@@ -34,9 +34,9 @@ public class GrandCircusLab3 {
 			}
 			
 			if ((number % 2) > 0) {
-				System.out.printf("%d: Odd.", number);
+				System.out.printf("%d: Odd.\n", number);
 				if (number > 60) {
-					System.out.printf("\n%d: Odd and > 60.", number);
+					System.out.printf("\n%d: Odd and > 60.\n", number);
 				}
 			} else {
 				if (number >= 2 && number < 25) {
