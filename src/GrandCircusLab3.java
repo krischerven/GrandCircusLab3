@@ -40,9 +40,9 @@ public class GrandCircusLab3 {
 				}
 			} else {
 				if (number >= 2 && number < 25) {
-					System.out.println("Even and < 25.");
+					System.out.printf("%d: Even and < 25.%n", number);
 				} else if (number >= 26 && number != 60) {
-					System.out.println("Even.");
+					System.out.printf("%d: Even.%n", number);
 				}
 			}
 			System.out.println("\nPlease enter a number between 1 and 100. Enter \"quit\" to quit.");
