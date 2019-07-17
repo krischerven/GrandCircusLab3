@@ -46,7 +46,7 @@ public class GrandCircusLab3 {
 					System.out.println("Even.");
 				}
 			}
-			System.out.println("%nPlease enter a number between 1 and 100. Enter \"quit\" to quit.");
+			System.out.println("\nPlease enter a number between 1 and 100. Enter \"quit\" to quit.");
 		}
 	}
 }
