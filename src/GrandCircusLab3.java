@@ -41,7 +41,7 @@ public class GrandCircusLab3 {
 			} else {
 				if (number >= 2 && number < 25) {
 					System.out.printf("%d: Even and < 25.%n", number);
-				} else if (number >= 26 && number <= 60) {
+				} else if (number >= 26) {
 					System.out.printf("%d: Even.%n", number);
 				}
 			}
