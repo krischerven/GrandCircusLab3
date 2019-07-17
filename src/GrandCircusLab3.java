@@ -36,7 +36,6 @@ public class GrandCircusLab3 {
 			if ((number % 2) > 0) {
 				System.out.printf("%d: Odd.%n", number);
 				if (number > 60) {
-					System.out.printf("%n%d: Odd and > 60.", number);
 					System.out.printf("%n%d: Odd and > 60.%n", number);
 				}
 			} else {
